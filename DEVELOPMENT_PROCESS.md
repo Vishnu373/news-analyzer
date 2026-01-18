@@ -94,3 +94,11 @@ Test 5: test_validation_output_format
 Purpose: Verify validation output contains all required fields
 Mock validation should contain: is_valid, validation_symbol, justification, suggested_corrections
 validation_symbol should be "[VALID]" or "[INVALID]" based on is_valid
+
+PROMPT 3 - README.md
+Write details in the README.md file.
+- A short summary on what the project is
+- File structure and about the files
+- How to setup
+ - the rquired api keys
+ - setup and test commands
