@@ -2,23 +2,23 @@ ARCHITECTURE:
 
 ```mermaid
 flowchart LR
-    subgraph [News Fetcher]
+    subgraph Agent1[News Fetcher]
         NA[NewsAPI] --> NF[news_fetcher.py]
         GA[Guardian API] --> NF
     end
     
-    subgraph [Analyzer]
+    subgraph Agent2[Analyzer]
         NF --> LA[llm_analyzer.py]
         LA -->|Gemini| Analysis[Gist + Sentiment + Tone]
     end
     
-    subgraph [Validator]
+    subgraph Agent3[Validator]
         Analysis --> LV[llm_validator.py]
         NF --> LV
         LV -->|Mistral| Validation[Validation Results]
     end
     
-    subgraph [Output]
+    subgraph Agent4[Output]
         Validation --> OUT[main.py]
         OUT --> JSON[analysis_reports.json]
         OUT --> MD[final_report.md]
