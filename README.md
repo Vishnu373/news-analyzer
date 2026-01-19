@@ -19,8 +19,6 @@ news-analyzer/
 ├── llm_validator.py         # Mistral-based validation
 ├── main.py                  # Orchestrator + output generation
 ├── requirements.txt         # Python dependencies
-├── .env                     # API keys (not committed)
-├── .gitignore              # Git ignore rules
 ├── test/
 │   └── test_analyzer.py    # Unit tests (5 test cases)
 └── output/                 # Generated reports
