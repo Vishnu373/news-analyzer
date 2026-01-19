@@ -27,13 +27,6 @@ wheels/
 .env
 .env.local
 
-# Output files
-output/
-*.json
-*.md
-!README.md
-!DEVELOPMENT_PROCESS.md
-
 # IDE
 .vscode/
 .idea/
