@@ -23,7 +23,7 @@ news-analyzer/
 ├── .gitignore              # Git ignore rules
 ├── test/
 │   └── test_analyzer.py    # Unit tests (5 test cases)
-└── output/                 # Generated reports (not committed)
+└── output/                 # Generated reports
     ├── raw_articles.json
     ├── analysis_reports.json
     └── final_report.md
